@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Quanta</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="https://fonts.googleapis.com/css?family=Jura|Pacifico|Poiret+One|Quicksand|Righteous|Rosario|Sacramento|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura|Poiret+One|Quicksand|Righteous|Rosario|VT323" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Montserrat|Notable|Orbitron|Oxygen|Righteous" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename='css/styles/style.css')}}">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Montserrat|Notable|Orbitron|Oxygen|Righteous" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/styles/style.css') }}">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    
+
+  </head>
+  <body>
+  <script>
+    $(document).ready(function() {
+    // show the alert
+    setTimeout(function() {
+        $(".alert").alert('close');
+    }, 2000);
+});
+  </script>
+ <div class = "container1" class = "class1">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+        <div id = "flash"class="alert alert-dismissible flashalert" role="alert">
+        <button style="color:white;"type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        {{message}}
+        </div>
+      {% endfor %}
+      {% endif %}
+    {% endwith %}
+     {% block body %}{% endblock %}
+      <script>
+        $(window).on('load', function(){
+            if( {{ var1 }}==1){
+            $('#myModal').modal('show');
+            }
+        });
+    </script>
+  </div>
+    <script type="text/javascript">
+  window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+  
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+  
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+  </script>
+      <script>
+        $(window).on('load', function(){
+            if( {{ var1 }}==1){
+            $('#myModal').modal('show');
+            }
+        });
+    </script>
+
+
+
+    <div id = "particles-js">
+
+      <div class = "nav" >
+        <form class = "login"action = "/login" method = "POST" name = "login_form">
+        <input class="me_email"type = "email" placeholder = "Email" name = "email">
+        <input class = "me_pass"type = "password" placeholder = "Password" name = "pass">
+        <input class= "me_sub" type = "submit" value = "Login">
+
+        
+        </form>
+        
+          <button id = "showModal" class="regbutton" >Register</button> <!--my register  modal button-->
+        
+        
+        <button id = "about" onclick="smoothScroll(document.getElementById('howto')) " >How To</button>
+      
+
+
+      </div>
+
+
+
+  <div class = "container" id = "regform">
+    <div class="modal">
+        <div class="modal-background" style = "background-color: rgba(0,0,0,.7)"></div>
+        <div class="modal-card">
+          <header class="modal-card-head" style= "background-color:#c5b2c4db;">
+            <p class="formheadtext" style = "margin-left:5%;color:white;text-shadow: 4px 4px 4px #795880;">Register</p> 
+            <button style = "margin-left:60%;max-height:30px;min-height:30px; max-width:30px;min-width:30px;"class="delete" aria-label="close"></button>
+          </header>
+          <section style="background-color:#67446ddb;padding:30px;"class="modal-card-body">
+            <!-- Content ... -->
+            <script type="text/javascript">
+
+              function checkForm(form)
+              {
+                if(form.fname.value == "") {
+                  alert("Error: First name cannot be blank!");
+                  form.username.focus();
+                  return false;
+                }
+                if(form.lname.value == "") {
+                  alert("Error: Last name cannot be blank!");
+                  form.username.focus();
+                  return false;
+                }
+                re = /^\w+$/;
+                if(!re.test(form.fname.value)) {
+                  alert("Error: First name must contain only letters, numbers and underscores!");
+                  form.username.focus();
+                  return false;
+                }
+                if(!re.test(form.lname.value)) {
+                  alert("Error: Last name must contain only letters, numbers and underscores!");
+                  form.username.focus();
+                  return false;
+                }
+    
+                if(form.pass.value != "" && form.pass.value == form.confirm.value) {
+                  if(form.pass.value.length < 7) {
+                    alert("Error: Password must contain at least seven characters!");
+                    form.pass.focus();
+                    return false;
+                  }
+                  if(form.pass.value == form.fname.value) {
+                    alert("Error: Password must be different from Username!");
+                    form.pass.focus();
+                    return false;
+                  }
+                  re = /[0-9]/;
+                  if(!re.test(form.pass.value)) {
+                    alert("Error: password must contain at least one number (0-9)!");
+                    form.pass.focus();
+                    return false;
+                  }
+                  re = /[a-z]/;
+                  if(!re.test(form.pass.value)) {
+                    alert("Error: password must contain at least one lowercase letter (a-z)!");
+                    form.pass.focus();
+                    return false;
+                  }
+              
+                }else {
+                  alert("Error: Passwords do not match!");
+                  form.pass.focus();
+                  return false;
+                }
+    
+                return true;
+              }
+    
+            </script>
+
+
+          <form action = "/register" class = "class1"  name = "register_form" onsubmit = "return checkForm(this);" method = "POST">
+          <span class = "cb" >First Name</span>  
+          <input class = "regtext" type = "text" name = "fname"id = "fname" required><br>
+          <span class = "cb" >Last Name</span> 
+          <input class = "regtext"type = "text" name = "lname"id = "lname" required><br>
+          <span class = "cb" >Email</span> 
+          <input class = "regtext" style = "margin-left:22%;"type = "email" name = "email"id = "email"  required><br>
+          <span class = "cb" >Password</span> 
+          <input class = "regtext" style = "margin-left:15.2%;"type = "password" name = "pass"id = "pass"  required><br>
+          <span class = "cb" >Confirm Password</span> 
+          <input class = "regtext" style = "margin-left:1%;" type = "password" name = "confirm"id = "confirm"required>
+          <input class = "regsubmit"type = "submit" value = "Register">
+      
+          
+          
+          </form>
+          </section>
+          <footer class="modal-card-foot" style= "background-color:#c5b2c4db;min-height: 75px;" >
+            
+            <button class="cancelreg" id = "cancel">Cancel</button>
+          </footer>
+        </div>
+      </div>
+
+
+      </div>
+
+
+      <script>
+         $("#showModal").click(function() {
+         $(".modal").addClass("is-active");  
+          });
+
+          $(".delete").click(function() {
+          $(".modal").removeClass("is-active");
+          });
+          $("#cancel").click(function() {
+          $(".modal").removeClass("is-active");
+          });     
+      </script>
+      <div class = "my_head">
+
+        Working in ML ? <br>
+        <span style = "margin-left:12%;position:absolute;">We're here to help!</span>
+      </div>
+    <!--  <div id = "sub_head">
+        You'd need us
+      </div>-->
+
+      <div class = "left">
+        <div class = "formhead">
+          <div class = "formheadtext">
+          Run Accuracy Test! 
+          </div>
+        </div>
+            <form class = "homeform class1" method=post enctype=multipart/form-data action = "/input">
+             <span class = "pink" >Select Your Models</span><br><br>
+              <input type="checkbox" name="option1" value="LR"> <span class = "cb">Logistic Regression</span><br>
+              <input type="checkbox" name="option2" value="LDA" ><span class = "cb">Linear Discriminant Analysis</span><br>
+              <input type="checkbox" name="option3" value="KNN"> <span class = "cb" >K Neighbors Classifier</span><br>
+              <input type="checkbox" name="option4" value="CART"> <span class = "cb" >Decision Tree Classifier</span><br>
+              <input type="checkbox" name="option5" value="NB" ><span class = "cb">Gaussian NB</span><br>
+              <input type="checkbox" name="option6" value="SVM"> <span class = "cb">SVM</span><br>
+              <br>
+           
+      
+              <span class = "pink2" >Number Of Parameters</span><br><br> <input class="par" type="number" name="numOfPar" value="0"><br> <br>      
+              <span class = "pink3" >Upload Dataset <span style ="margin-left:0%;font-size: 20px;color: white;font-family: 'Quicksand', sans-serif;text-decoration:none;" >(Only .csv format)</span></span><br><br>
+          <input class = "myfile" type=file name=file><br><br>
+            
+            <input class = "upload"type=submit value=Upload>
+          </form>
+
+          {% if var1 ==1%}
+          <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    
+                  </div>
+                  <div class="modal-body">
+                    
+                    <img src={{var0}} />
+            
+                    <p style = "background-color: #e6d8e6;
+                    padding: 10px;
+                    font-size: 35px;
+                      font-family: 'Righteous', cursive;">Accuracy</p>
+                      {% if temp[0] == 1 %}
+                       <p class = "acnum">Logistic Regression : {{temp[6]}}</p>
+                       {% endif %}
+                       {% if temp[1]==1 %}
+                       <p class = "acnum">Linear Discriminant Analysis : {{temp[7]}}</p>
+                       {% endif %}
+                       {% if temp[2]==1 %}
+                       <p class = "acnum">K Neighbors Classifier : {{temp[8]}}</p>
+                       {% endif %}
+                       {% if temp[3]==1 %}
+                       <p class = "acnum">Decision Tree Classifier : {{temp[9]}}</p>
+                       {% endif %}
+                       {% if temp[4]==1 %}
+                       <p class = "acnum">Gaussian NB : {{temp[10]}}</p>
+                       {% endif %}
+                       {% if temp[5]==1 %}
+                       <p class = "acnum">Support Vector : {{temp[11]}}</p>
+                      {% endif %}
+            
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                   
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            {%endif%}
+      </div>
+
+ </div>
+
+    <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+
+<div class = "howto" id = "howto">
+
+ Get started in no time
+</div>
+<div class = "steps">
+  <div class = "step1">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;">1</span><br>
+    <div class = "text">
+    Choose from the most widely used Machine 
+    Learning Models for which you want to compare the accuracy
+    for.<br>
+    We use Box & Whisker plot to compare the accuracies.</div>
+  </div>
+  <div class = "step2">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;"
+    >2</span><br>
+    <div class = "text">
+    Select the number of parameters you have for your custom
+    dataset.
+      </div>
+  </div>
+
+  <div class = "step3">
+    <span style = "  font-size: 250px;
+    margin-top: -12%;
+    position: absolute;
+    color: #e4dae4f7;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;">3 </span><br> 
+    <div class = "text">
+    Upload your dataset is csv format. We only accept 
+    datasets containg integer or float values. The 
+    running time depends on the size of your dataset.<br>
+    <span> Register to store your results and get access to free datasets provided by us.</span>
+      </div>
+
+
+  </div>
+
+</div>
+
+
+  </body>
+
+</html>
